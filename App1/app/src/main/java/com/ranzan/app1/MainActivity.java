@@ -27,8 +27,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setAction("android.ranzan.mydata");
+                intent.setAction("android.dude.mydata");
                 intent.setType("plain/text");
+                intent.putExtra("key", name.getText().toString());
                 PackageManager packageManager = getPackageManager();
                 List<ResolveInfo> activitiesList = packageManager.queryIntentActivities(intent, 0);
                 if (activitiesList.size() >= 1) {

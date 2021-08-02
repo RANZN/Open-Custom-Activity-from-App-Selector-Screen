@@ -14,7 +14,8 @@
         android:layout_marginTop="150dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
-        android:hint="enter name" />
+        android:hint="enter name"
+        android:minHeight="48dp" />
 
     <Button
         android:id="@+id/send"
